@@ -1,0 +1,35 @@
+.page-footer {
+  background-color: $basic-grey;
+}
+
+.page-footer__container {
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px 0 19px;
+}
+
+.page-footer__inner {
+  width: auto;
+}
+
+.page-footer__holder {
+  background-color: $basic-white;
+}
+
+.page-footer__holder-color {
+  background-color: $basic-grey;
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer__container {
+    max-width: 708px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 53px 30px 60px 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+}
