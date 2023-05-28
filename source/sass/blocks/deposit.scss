@@ -1,0 +1,156 @@
+.deposit__desc span,
+.deposit__count {
+  color: #ed9438;
+  margin: 0;
+}
+
+.deposit-desc__holder,
+.deposit__wrap-button {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.deposit__button {
+  padding: 20px 30px;
+  background-color: #ed9438;
+  border: none;
+  color: white;
+}
+
+.deposit__count {
+  font-size: 50px;
+}
+
+.deposit {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.deposit-desc__holder {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.deposit__title {
+  margin: 0;
+}
+
+.deposit__item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.deposit__item::before {
+  content: "";
+  position: absolute;
+  top: -40px;
+  left: 349px;
+  height: 160px;
+  width: 220px;
+  background-color: #fff3ea;
+  z-index: -1;
+}
+
+.deposit__wrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.deposit__plan {
+  font-size: 36px;
+  margin: 0;
+  color: #ed9438;
+  text-align: center;
+}
+
+.deposit__help {
+  background-color: white;
+  padding: 20px 30px;
+  color: black;
+  border: none;
+  width: 242px;
+}
+
+.deposit__item-individ {
+  position: relative;
+}
+
+.deposit__item-individ::before {
+  content: "";
+  position: absolute;
+  top: -40px;
+  left: 349px;
+  height: 160px;
+  width: 220px;
+  background-color: #ed9438;
+  z-index: -1;
+}
+
+.deposit__individ {
+  color: white;
+  text-align: center;
+}
+
+.deposit__price {
+  font-size: 50px;
+  margin: 0;
+  color: white;
+}
+
+.deposit-individ {
+  z-index: -2;
+  background-color: #fdd099;
+}
+
+.deposit-desc__individ-desc {
+  font-size: 20px;
+  text-align: center;
+}
+
+.deposit__item-individ {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 40p;
+}
+
+@media (min-width: 1920px) {
+  .deposit {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .deposit__item {
+    width: 500px;
+    gap: 50px;
+  }
+
+  .deposit__price {
+    font-size: 70px;
+  }
+
+  .deposit__count {
+    font-size: 70px;
+  }
+  .deposit__button {
+    padding: 20px 60px;
+  }
+
+  .deposit-desc__individ-desc {
+    font-size: 26px;
+    line-height: 30px;
+  }
+
+}

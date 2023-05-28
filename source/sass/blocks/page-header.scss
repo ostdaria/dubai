@@ -1,5 +1,5 @@
 .page-header__wrapper {
-  padding: 0 20px;
+  // padding: 0 20px;
   z-index: 1;
 }
 
@@ -8,7 +8,7 @@
   align-items: center;
   flex-direction: row;
   background-color: #64533e;
-  padding: 10px;
+  padding: 10px 15px;
   gap: 70px;
 }
 
@@ -167,7 +167,8 @@
 }
 
 .page-header__button-number:nth-child(2),
-.page-header__button-number:nth-child(3) {
+.page-header__button-number:nth-child(3),
+.page-header__button-number:nth-child(4) {
   height: 78px;
   width: 116px;
   margin-top: 20px;
@@ -470,7 +471,8 @@
 
 
   .page-header__button-number:nth-child(2),
-  .page-header__button-number:nth-child(3) {
+  .page-header__button-number:nth-child(3),
+  .page-header__button-number:nth-child(4) {
     height: 154px;
     width: 210px;
     margin-top: 20px;
@@ -497,5 +499,6 @@
     display: flex;
     justify-content: none;
   }
+
 
 }

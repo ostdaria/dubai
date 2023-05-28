@@ -1,0 +1,12 @@
+.calculator {
+  background-color: #2f403f;
+  padding: 50px 70px;
+}
+
+
+@media (min-width: 1920px) {
+  .calculator__holder {
+    width: 1280px;
+    background-color: #2f403f;
+  }
+}
