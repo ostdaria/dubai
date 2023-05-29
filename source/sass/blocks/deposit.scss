@@ -13,10 +13,12 @@
 }
 
 .deposit__button {
-  padding: 20px 30px;
+  padding: 10px 30px;
   background-color: #ed9438;
   border: none;
   color: white;
+  height: 48px;
+  width: 180xp;
 }
 
 .deposit__count {
@@ -27,14 +29,24 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  gap: 30px;
+  width: 480px;
+  position: relative;
+}
+
+.deposit__item::after {
+  content: "";
+  bottom: 0;
+  left: 0;
+  height: 1px;
+  width: 100%;
+  background-color: #fff3ea;
+  position: relative;
 }
 
 .deposit-desc__holder {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  gap: 30px;
+  text-align: left;
 }
 
 .deposit__title {
@@ -52,10 +64,10 @@
 .deposit__item::before {
   content: "";
   position: absolute;
-  top: -40px;
-  left: 349px;
-  height: 160px;
-  width: 220px;
+  top: 0px;
+  left: 310px;
+  height: 110px;
+  width: 170px;
   background-color: #fff3ea;
   z-index: -1;
 }
@@ -63,11 +75,13 @@
 .deposit__wrap {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
+  padding: 15px 0;
+  gap: 90px;
 }
 
 .deposit__plan {
-  font-size: 36px;
+  font-size: 26px;
   margin: 0;
   color: #ed9438;
   text-align: center;
@@ -88,10 +102,10 @@
 .deposit__item-individ::before {
   content: "";
   position: absolute;
-  top: -40px;
-  left: 349px;
-  height: 160px;
-  width: 220px;
+  top: 0px;
+  left: 310px;
+  height: 110px;
+  width: 170px;
   background-color: #ed9438;
   z-index: -1;
 }
@@ -109,6 +123,7 @@
 
 .deposit-individ {
   z-index: -2;
+  min-width: 480px;
   background-color: #fdd099;
 }
 
@@ -124,12 +139,23 @@
   gap: 40p;
 }
 
+.deposit-desc__holder-item .deposit__desc {
+  margin: 10px 0;
+  text-align: left;
+}
+
+.deposit__wrap-icon {
+  display: none;
+}
+
 @media (min-width: 1920px) {
   .deposit {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     flex-wrap: wrap;
+    width: auto;
+    height: 423px;
   }
 
   .deposit__item {
@@ -151,6 +177,65 @@
   .deposit-desc__individ-desc {
     font-size: 26px;
     line-height: 30px;
+  }
+
+  .deposit__wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 0;
+  }
+
+  .deposit__item::before {
+    content: "";
+    position: absolute;
+    top: -40px;
+    left: 349px;
+    height: 160px;
+    width: 220px;
+    background-color: #fff3ea;
+    z-index: -1;
+  }
+
+  .deposit__item-individ::before {
+    content: "";
+    position: absolute;
+    top: -40px;
+    left: 349px;
+    height: 160px;
+    width: 220px;
+    background-color: #ed9438;
+    z-index: -1;
+  }
+
+
+  .deposit-desc__holder {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    // gap: 30px;
+    text-align: center;
+  }
+
+  .deposit__wrap-icon {
+    display: block;
+  }
+
+  .deposit__plan {
+    font-size: 36px;
+  }
+
+
+  .deposit__item::after {
+    display: none;
+  }
+
+
+
+  .deposit__button {
+    padding: 20px 30px;
+    height: 54px;
+    width: 240px;
   }
 
 }
