@@ -257,6 +257,10 @@
   display: block;
 }
 
+.page-header__time-holder {
+  display: none;
+}
+
 
 @media (min-width: $tablet-width) {
   .page-header__wrapper {
@@ -341,11 +345,11 @@
   }
 
   .page-header__link-holder {
-    margin: 7px 5px;
+    margin: 10px 5px 10px 12px;
   }
 
   .page-header__link-email {
-    text-decoration: none;
+    // text-decoration: none;
     font-family: "Tahoma";
     font-weight: 400;
     font-size: 20px;
@@ -356,14 +360,23 @@
   .page-header__button {
     border: none;
     width: 242px;
-    padding: 15px 40px;
+    padding: 10px 40px;
     font-family: "Tahoma";
     font-weight: 400;
     font-size: 18px;
+    height: 47px;
     background-color: #fdd099;
   }
 
-  .page-header__time-holder p {
+  .page-header__inner {
+    width: auto;
+  }
+
+  .page-header__time-holder {
+    display: inline-block;
+  }
+
+  .page-header__time-holder time {
     font-family: "Tahoma";
     font-weight: 400;
     font-size: 34px;
