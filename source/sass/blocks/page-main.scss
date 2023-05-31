@@ -266,7 +266,7 @@ img {
   }
 
   .page-main__text-holder {
-    padding: 40px 69px;
+    padding: 40px 69px 40px 70px;
     width: 500px;
   }
 
@@ -368,7 +368,33 @@ img {
     background-color: #fff3ea;
     padding: 0px;
     width: 500px;
+    position: relative;
   }
+
+  // .page-main__img-wrap-video::after {
+  //   content: "";
+  //   position: absolute;
+  //   top: 40%;
+  //   left: 43%;
+  //   height: 114px;
+  //   width: 114px;
+  //   border-radius: 55px;
+  //   background-color: rgba(8,22,20, 0.7);
+  //   border: 1px solid white;
+  //   z-index: 1;
+  // }
+
+  // .page-main__img-wrap-video::before {
+  //   content: "";
+  //   position: absolute;
+  //   top: 40%;
+  //   left: 43%;
+  //   height: 100px;
+  //   width: 100px;
+  //   border-radius: 55px;
+  //   background-image: url("../img/icon-play.svg");
+  //   z-index: 2;
+  // }
 
   .page-main__img-wrap-video {
     height: 508px;
