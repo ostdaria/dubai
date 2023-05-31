@@ -76,7 +76,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  padding: 15px 0;
+  margin: 15px 0;
   gap: 90px;
 }
 
@@ -135,8 +135,12 @@
 .deposit__item-individ {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  gap: 40p;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.deposit__item-individ .deposit__wrap-button {
+  margin-top: auto;
 }
 
 .deposit-desc__holder-item .deposit__desc {
@@ -148,6 +152,16 @@
   display: none;
 }
 
+.deposit__wrap-icon-round {
+  border: 1px solid #fff3ea;
+  border-radius: 25px;
+  height: 26px;
+  width: 26px;
+  background: none;
+  // color: #fdd099;
+  // text-align: ;
+}
+
 @media (min-width: 1920px) {
   .deposit {
     display: flex;
@@ -155,12 +169,12 @@
     justify-content: flex-start;
     flex-wrap: wrap;
     width: auto;
-    height: 423px;
+    // height: 423px;
   }
 
   .deposit__item {
     width: 500px;
-    gap: 50px;
+    gap: 24px;
   }
 
   .deposit__price {
@@ -213,7 +227,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    // gap: 30px;
+    // gap: 15px;
     text-align: center;
   }
 
@@ -236,6 +250,11 @@
     padding: 20px 30px;
     height: 54px;
     width: 240px;
+  }
+
+  .deposit__wrap-icon-round {
+    display: flex;
+    margin: 0 auto;
   }
 
 }
