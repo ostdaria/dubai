@@ -46,7 +46,9 @@
 .deposit-desc__holder {
   display: flex;
   flex-direction: column;
+  align-items: left;
   text-align: left;
+  margin: 0px 30px 0 100px;
 }
 
 .deposit__title {
@@ -58,7 +60,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  gap: 30px;
+  gap: 19px;
 }
 
 .deposit__item::before {
@@ -76,7 +78,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  margin: 15px 0;
+  margin: 15px 0 15px 0;
   gap: 90px;
 }
 
@@ -124,7 +126,9 @@
 .deposit-individ {
   z-index: -2;
   min-width: 480px;
-  background-color: #fdd099;
+  // background-color: #fff3ea;
+  background-image: url("../img/background-vip-deposit.png");
+  background-repeat: no-repeat;
 }
 
 .deposit-desc__individ-desc {
@@ -143,12 +147,9 @@
   margin-top: auto;
 }
 
-.deposit-desc__holder-item .deposit__desc {
-  margin: 10px 0;
-  text-align: left;
-}
 
-.deposit__wrap-icon {
+
+.deposit__block .deposit__wrap-icon {
   display: none;
 }
 
@@ -163,7 +164,6 @@
 
 .deposit-desc__holder {
   display: flex;
-  // justify-content: flex-start;
 }
 
 .deposit-desc__holder-item {
@@ -172,6 +172,23 @@
   gap: 10px;
 }
 
+.deposit__block {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.deposit-desc__holder-item .deposit__desc {
+  margin: 17px 0 10px 0;
+  text-align: left;
+}
+
+
+
+
+
+
+
 @media (min-width: 1920px) {
   .deposit {
     display: flex;
@@ -179,12 +196,11 @@
     justify-content: flex-start;
     flex-wrap: wrap;
     width: auto;
-    // height: 423px;
   }
 
   .deposit__item {
     width: 500px;
-    gap: 24px;
+    gap: 11px;
   }
 
   .deposit__price {
@@ -207,7 +223,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    gap: 0;
+    gap: 0px;
   }
 
   .deposit__item::before {
@@ -237,8 +253,9 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    // gap: 15px;
     text-align: center;
+    align-items: center;
+    margin: 0px;
   }
 
   .deposit-desc__holder-item {
@@ -247,21 +264,21 @@
     gap: 0;
   }
 
-
   .deposit__wrap-icon {
     display: block;
   }
 
   .deposit__plan {
-    font-size: 36px;
+    font-size: 14px;
   }
 
+  .deposit__plan:nth-child(2) {
+    font-size: 70px;
+  }
 
   .deposit__item::after {
     display: none;
   }
-
-
 
   .deposit__button {
     padding: 20px 30px;
@@ -276,5 +293,22 @@
   .deposit__item-individ {
     gap: 95px;
   }
+
+
+  .deposit-individ {
+    // padding: 40px 29px;
+    // width: 530px;
+  }
+
+  .deposit-desc__holder-item .deposit__desc {
+    margin: 0;
+    text-align: left;
+  }
+
+  .deposit__block .deposit__wrap-icon {
+    display: block;
+  }
+
+
 
 }
