@@ -133,9 +133,7 @@
   margin: 0;
 }
 
-.page-main__wrap-advantage {
-  background-color: rgba(8,22,20, 0.7);
-}
+
 
 .page-main__img-wrap img {
   width: 480px;
@@ -167,17 +165,20 @@
 .page-main__wrap-video {
   background-image: url("../img/image-background-video.png");
   background-repeat: no-repeat;
-  width: 480px;
-  height: 380px;
+  width: 440px;
+  height: 340px;
   position: relative;
+  border: 20px solid rgba(85,92,84, 0.7);
 }
 
 .page-main__img-wrap-video {
   padding: 28px 47px;
   background-color: rgba(208,170,126, 0.8);
-  width: 200px;
-  margin-top: 262px;
+  width: 180px;
+  margin-top: 242px;
   bottom: 0;
+  position: relative;
+  left: -20px;
 }
 
 .page-main__wrap-video::after {
@@ -194,8 +195,8 @@
 .page-main__wrap-video::before {
   content: "";
   position: absolute;
-  top: 10%;
-  right: 5%;
+  top: 4%;
+  right: -1%;
   height: 60px;
   width: 150px;
   background-image: url("../img/icon-youtube.png");
@@ -353,9 +354,15 @@
     width: 640px;
   }
 
+  .page-main__wrap-image {
+    width: 1280px;
+    height: 499px;
+  }
+
   .page-main__wrap-image img {
     width: 1279px;
     height: 500px;
+    background-size: cover;
   }
 
   .page-main__wrap-image,
@@ -375,10 +382,10 @@
 
   .page-main__wrap-advantage::after {
     content: "";
-    top: -500px;
+    top: -496px;
     right: 0;
     width: 640px;
-    height: 500px;
+    height: 496px;
     position: absolute;
     background-color: rgba(8,22,20, 0.7);
   }
@@ -393,7 +400,7 @@
     flex-direction: row;
     padding: 0;
     width: 1920px;
-    height: 1000px;
+    height: 998px;
     background-image: url("../img/image-4.jpg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -428,16 +435,19 @@
   .page-main__wrap-video {
     position: relative;
     background-image: url("../img/image-background-video.png");
-    width: 640px;
-    height: 508px;
+    width: 600px;
+    height: 460px;
+    border: 20px solid rgba(85,92,84, 0.7);
   }
 
   .page-main__img-wrap-video {
     padding: 38px 47px;
     background-color: rgba(208,170,126, 0.8);
     width: 240px;
-    margin-top: 345px;
+    margin-top: 320px;
+    left: -20px;
     position: relative;
+
     bottom: 0;
   }
 
@@ -488,6 +498,10 @@
     width: 80px;
     background-image: url("../img/icon-d-orange.png");
     background-repeat: no-repeat;
+  }
+
+  .page-main__wrap-advantage {
+    background-color: rgba(8,22,20, 0.7);
   }
 }
 

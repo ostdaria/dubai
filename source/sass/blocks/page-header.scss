@@ -11,6 +11,15 @@
   gap: 10px;
 }
 
+.page-header__wrapper {
+  padding: 0;
+  background: url("../img/main-background.png");
+  background-repeat: no-repeat;
+  width: 100%;
+}
+
+
+
 .page-header__inner {
   width: 460px;
   display: flex;
@@ -45,11 +54,16 @@
   color: black;
 }
 
+.page-header__nav-item a:hover {
+  border-left: 2px solid #fdd099;
+}
+
+
 .page-header__main-holder {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  gap: 10px;
+  gap: 39px;
   position: relative;
 }
 
@@ -69,13 +83,14 @@
   position: absolute;
   top: 0;
   left: 0px;
-  width: 500px;
-  height: 588px;
+  width: 480px;
+  height: 607px;
   background-color: rgba(85,92,84, 0.7);
 }
 
 .page-header__box div,
-.page-header__button-wrapper {
+.page-header__button-wrapper .page-header__button-box,
+.page-header__button-inner {
   z-index: 1000 !important;
 }
 
@@ -105,6 +120,10 @@
   background-color: #fdd099;
 }
 
+.page-header__button:hover {
+  background-color:#ed9438;
+}
+
 .page-header__title-holder .page-header__title {
   margin: 0;
   font-weight: 400;
@@ -112,13 +131,10 @@
 }
 
 .page-header__wrap {
-  background-color: #cba77b;
   display: flex;
   flex-direction: column;
   position: relative;
 }
-
-
 
 .page-header__slogan {
   font-family: "Tahoma";
@@ -150,13 +166,15 @@
 }
 
 .page-header__button-box {
-  padding: 20px 10px;
+  padding: 30px 0;
 }
 
 .page-header__button-number-holder {
   padding: 0;
   z-index: 10;
 }
+
+
 
 .page-header__text-button {
   border: none;
@@ -168,6 +186,10 @@
   font-size: 16px;
   background-color:#ed9438;
   color: white;
+}
+
+.page-header__text-button:hover {
+  background-color: #fdd099;
 }
 
 .page-header__button-number-holder {
@@ -185,6 +207,10 @@
   font-family: "Tahoma";
   font-weight: 200;
   font-size: 66px;
+  background-color: #fdd099;
+}
+
+.page-header__button-number:hover {
   background-color: #fdd099;
 }
 
@@ -313,6 +339,10 @@
   gap: 10px;
 }
 
+.page-header__icon-holder img {
+  height: 65px;
+}
+
 
 @media (min-width: $tablet-width) {
   .page-header__wrapper {
@@ -323,13 +353,26 @@
 @media (min-width: 1920px) {
   .page-header__wrapper {
     padding: 0;
+    background: url("../img/main-background.png");
+    background-repeat: no-repeat;
+    width: 1920px;
+    height: 970px;
   }
+
+  .page-header__button-box {
+    padding: 0;
+  }
+
+  .page-header__navigation {
+    width: auto;
+  }
+
   .page-header__holder {
     padding: 35px 55px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    background-color: #64533e;
+    // background-color: #64533e;
   }
 
   .page-header__holder {
@@ -409,6 +452,10 @@
     color: #fdd099;
   }
 
+  .page-header__link-email:hover {
+    color: #fdd099;
+  }
+
   .page-header__button {
     border: none;
     width: 242px;
@@ -452,7 +499,7 @@
     padding: 30px ;
     writing-mode: vertical-lr;
     transform: scale(-1);
-    min-height: 797px;
+    height: 756px;
   }
 
   .page-header__nav-item {
@@ -511,9 +558,14 @@
 
   .page-header__main-holder {
     display: flex;
+    flex-direction: row;
+    gap: 180px;
+  }
+
+  .page-header__button-inner {
+    display: flex;
     flex-direction: column;
-    gap: 90px;
-    justify-content: space-between;
+    gap: 180px;
   }
 
   .page-header__main-wrap {
@@ -522,7 +574,7 @@
 
   .page-header__text-holder {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
   }
 
@@ -531,13 +583,14 @@
     flex-direction: column;
     gap: 40px;
     align-items: center;
-    margin-top: 50px;
+    margin: 150px 56px 0 531px;
+    align-items: right;
+    text-align: center;
   }
 
   .page-header__button-wrapper {
     display: flex;
     flex-direction: row;
-    // justify-content: space-between;
   }
 
   .page-header__button-number-holder {
@@ -589,7 +642,7 @@
     display: flex;
     flex-direction: row;
     gap: 725px;
-    padding: 10px 0 0px 220px;
+    padding: 20px 0px;
   }
 
   .page-header__box {
@@ -609,13 +662,14 @@
     width: 140px;
   }
 
+
   .page-header__main-wrap::after {
     content: "";
     position: absolute;
     top: 0;
     left: 0px;
-    width: 550px;
-    height: 858px;
+    width: 560px;
+    height: 817px;
     background-color: rgba(85,92,84, 0.7);
     z-index: 1;
   }
@@ -638,6 +692,10 @@
 
   .page-header__button-round--email svg {
     margin: 8px;
+  }
+
+  .page-header__icon-holder img {
+    height: 80px;
   }
 
 }

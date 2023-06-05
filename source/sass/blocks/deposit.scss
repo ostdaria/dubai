@@ -183,7 +183,10 @@
   text-align: left;
 }
 
-
+.deposit__individ-text {
+  color: white;
+  text-align: center;
+}
 
 
 
@@ -204,11 +207,11 @@
   }
 
   .deposit__price {
-    font-size: 70px;
+    font-size: 50px;
   }
 
   .deposit__count {
-    font-size: 70px;
+    font-size: 50px;
   }
   .deposit__button {
     padding: 20px 60px;
@@ -222,8 +225,14 @@
   .deposit__wrap {
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
+    gap: 156px;
+  }
+
+  .deposit-individ .deposit__wrap {
+    gap: 190px;
     justify-content: space-between;
-    gap: 0px;
+
   }
 
   .deposit__item::before {
@@ -273,7 +282,7 @@
   }
 
   .deposit__plan:nth-child(2) {
-    font-size: 70px;
+    font-size: 50px;
   }
 
   .deposit__item::after {
